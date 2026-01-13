@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
 
-## Project info
+# Lainan Junger E-commerce
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Projeto de e-commerce moderno para a marca Lainan Junger, desenvolvido com React, Vite, TypeScript, Tailwind CSS e shadcn-ui.
 
-## How can I edit this code?
+## Sobre o projeto
 
-There are several ways of editing your application.
+Este repositório contém o código-fonte de uma loja virtual focada em moda, com design responsivo, componentes reutilizáveis e experiência de usuário otimizada.
 
-**Use Lovable**
+### Principais funcionalidades
+- Catálogo de produtos com destaques e categorias
+- Filtros e navegação intuitiva
+- Carrinho de compras (em desenvolvimento)
+- Newsletter e formulário de contato
+- Layout responsivo e moderno
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Tecnologias utilizadas
 
-Changes made via Lovable will be committed automatically to this repo.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
 
-**Use your preferred IDE**
+## Como rodar o projeto localmente
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Clone o repositório:
+	```sh
+	git clone <URL_DO_REPOSITORIO>
+	cd lainan-junger-e-commerce
+	```
+2. Instale as dependências:
+	```sh
+	npm install
+	```
+3. Inicie o servidor de desenvolvimento:
+	```sh
+	npm run dev
+	```
+4. Acesse `http://localhost:8080` no navegador.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Estrutura do projeto
 
-Follow these steps:
+- `src/components/` — Componentes reutilizáveis da interface
+- `src/pages/` — Páginas principais do site
+- `src/hooks/` — Hooks customizados
+- `src/lib/` — Funções utilitárias
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Personalização
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Você pode adaptar o layout, cores e componentes conforme a identidade visual da sua marca editando os arquivos em `src/` e as configurações do Tailwind em `tailwind.config.ts`.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Deploy
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+O deploy pode ser feito facilmente em plataformas como Vercel, Netlify ou qualquer serviço que suporte aplicações front-end estáticas.
 
-**Edit a file directly in GitHub**
+## Licença
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Este projeto é open-source e está sob a licença MIT.

@@ -31,6 +31,7 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Navegação</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Início</a></li>
+              <li><a href="#Campanhas" className="hover:text-primary transition-colors">Campanhas</a></li>
               <li><a href="#produtos" className="hover:text-primary transition-colors">Produtos</a></li>
               <li><a href="#categorias" className="hover:text-primary transition-colors">Categorias</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Ofertas</a></li>
@@ -76,9 +77,9 @@ const Footer = () => {
             © 2024 Lainan Junger. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" alt="Stripe" className="h-6 opacity-60" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1200px-Mastercard_2019_logo.svg.png" alt="Mastercard" className="h-6 opacity-60" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png" alt="Visa" className="h-4 opacity-60" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.pn" alt="Stripe" className="h-6 opacity-60" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1200px-Mastercard_2019_logo.svg.pn" alt="Mastercard" className="h-6 opacity-60" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.pn" alt="Visa" className="h-4 opacity-60" />
           </div>
         </div>
       </div>
