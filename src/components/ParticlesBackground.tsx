@@ -1,21 +1,21 @@
 const ParticlesBackground = () => {
-    return (
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-[1]">
-            <div className="particles-container">
-                {[...Array(80)].map((_, i) => (
-                    <div
-                        key={i}
-                        className="particle"
-                        style={{
-                            left: `${Math.random() * 100}%`,
-                            top: `${Math.random() * 100}%`,
-                            animationDelay: `${Math.random() * 3}s`,
-                            animationDuration: `${3 + Math.random() * 4}s`,
-                        }}
-                    />
-                ))}
-            </div>
-            <style>{`
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-[1]">
+      <div className="particles-container">
+        {[...Array(80)].map((_, i) => (
+          <div
+            key={i}
+            className="particle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${3 + Math.random() * 4}s`,
+            }}
+          />
+        ))}
+      </div>
+      <style>{`
         .particles-container {
           position: absolute;
           width: 100%;
@@ -26,10 +26,10 @@ const ParticlesBackground = () => {
           position: absolute;
           width: 4px;
           height: 4px;
-          background: #ec4899;
+          background: var(--particle-1);
           border-radius: 50%;
           opacity: 0.7;
-          box-shadow: 0 0 15px #ec4899, 0 0 30px #ec489950;
+          box-shadow: var(--particle-shadow);
           animation: float-particle ease-in-out infinite;
         }
         
@@ -55,8 +55,8 @@ const ParticlesBackground = () => {
         }
         
         .particle:nth-child(2n) {
-          background: #d946ef;
-          box-shadow: 0 0 15px #d946ef, 0 0 30px #d946ef50;
+          background: var(--particle-2);
+          box-shadow: var(--particle-shadow);
           animation-direction: reverse;
         }
         
@@ -73,12 +73,12 @@ const ParticlesBackground = () => {
         }
         
         .particle:nth-child(5n) {
-          background: #f472b6;
-          box-shadow: 0 0 20px #f472b6, 0 0 40px #f472b650;
+          background: var(--particle-3);
+          box-shadow: var(--particle-shadow);
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ParticlesBackground;

@@ -1,12 +1,14 @@
 import { useState } from "react";
-import { Menu, X, ShoppingCart, Search, User } from "lucide-react";
+import { Menu, X, ShoppingCart, Search, User, Moon, Sun } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/useCart";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { getItemCount } = useCart();
+  const { theme, setTheme } = useTheme();
 
   const navLinks = [
     { label: "Início", href: "#" },
@@ -59,10 +61,29 @@ const Header = () => {
                 )}
               </Button>
             </Link>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-muted-foreground hover:text-foreground"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <span className="sr-only">Toggle theme</span>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <span className="sr-only">Toggle theme</span>
+            </Button>
             <Link to="/carrinho">
               <Button variant="ghost" size="icon" className="relative text-muted-foreground">
                 <ShoppingCart className="h-5 w-5" />

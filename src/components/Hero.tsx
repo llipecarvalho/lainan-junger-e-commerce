@@ -10,6 +10,16 @@ const Hero = () => {
       <div className="absolute inset-0 bg-noise pointer-events-none" />
       <ParticlesBackground />
 
+      {/* Mobile Background Image */}
+      <div className="absolute inset-0 md:hidden z-0">
+        <div className="absolute inset-0 bg-background/80 z-10" />
+        <img
+          src="/lainan1.jpeg"
+          alt="Background"
+          className="w-full h-full object-cover opacity-50"
+        />
+      </div>
+
       {/* Decorative elements */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-2xl" />
