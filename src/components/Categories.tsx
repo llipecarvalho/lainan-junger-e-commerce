@@ -1,25 +1,7 @@
-const categories = [
-  {
-    name: "Camisetas",
-    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&h=500&fit=crop",
-    count: 45,
-  },
-  {
-    name: "Calças",
-    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
-    count: 32,
-  },
-  {
-    name: "Moletons",
-    image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=400&h=500&fit=crop",
-    count: 28,
-  },
-  {
-    name: "Acessórios",
-    image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400&h=500&fit=crop",
-    count: 56,
-  },
-];
+import categoriesData from "@/data/categories.json";
+import { Category } from "@/types/types";
+
+const categories: Category[] = categoriesData;
 
 const Categories = () => {
   return (
@@ -35,7 +17,7 @@ const Categories = () => {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-          {categories.map((category) => (
+          {categories.slice(0, 4).map((category) => (
             <a
               key={category.name}
               href="#"

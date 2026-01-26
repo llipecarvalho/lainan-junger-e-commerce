@@ -1,0 +1,307 @@
+[
+    {
+        "id": 1,
+        "name": "Camiseta Oversized Premium",
+        "price": 89.90,
+        "originalPrice": 129.90,
+        "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=750&fit=crop",
+            "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=750&fit=crop",
+            "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=600&h=750&fit=crop"
+        ],
+        "category": "Camisetas",
+        "description": "Camiseta oversized confeccionada em algodão premium 100%. Modelagem ampla e confortável, perfeita para o dia a dia. Acabamento de alta qualidade com costuras reforçadas.",
+        "sizes": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "colors": [
+            "Preto",
+            "Branco",
+            "Cinza"
+        ],
+        "stock": 45,
+        "discount": 30,
+        "rating": 4.8,
+        "reviewCount": 127
+    },
+    {
+        "id": 2,
+        "name": "Calça Jogger Street",
+        "price": 149.90,
+        "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&h=750&fit=crop",
+            "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&h=750&fit=crop"
+        ],
+        "category": "Calças",
+        "description": "Calça jogger estilo streetwear com ajuste no tornozelo. Tecido resistente e confortável, ideal para looks urbanos. Bolsos laterais e traseiros funcionais.",
+        "sizes": [
+            "P",
+            "M",
+            "G",
+            "GG",
+            "XG"
+        ],
+        "colors": [
+            "Preto",
+            "Verde",
+            "Azul"
+        ],
+        "stock": 32,
+        "isNew": true,
+        "rating": 4.6,
+        "reviewCount": 89
+    },
+    {
+        "id": 3,
+        "name": "Moletom Capuz Essential",
+        "price": 189.90,
+        "originalPrice": 249.90,
+        "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=750&fit=crop",
+            "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=600&h=750&fit=crop"
+        ],
+        "category": "Moletons",
+        "description": "Moletom com capuz e bolso canguru. Tecido flanelado interno para maior conforto térmico. Essencial para os dias frios.",
+        "sizes": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "colors": [
+            "Preto",
+            "Cinza",
+            "Branco"
+        ],
+        "stock": 28,
+        "discount": 25,
+        "rating": 4.9,
+        "reviewCount": 203
+    },
+    {
+        "id": 4,
+        "name": "Jaqueta Corta-Vento",
+        "price": 259.90,
+        "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=750&fit=crop"
+        ],
+        "category": "Jaquetas",
+        "description": "Jaqueta corta-vento impermeável com capuz removível. Perfeita para dias chuvosos e ventosos. Bolsos com zíper.",
+        "sizes": [
+            "M",
+            "G",
+            "GG"
+        ],
+        "colors": [
+            "Preto",
+            "Azul"
+        ],
+        "stock": 15,
+        "isNew": true,
+        "rating": 4.7,
+        "reviewCount": 56
+    },
+    {
+        "id": 5,
+        "name": "Bermuda Cargo Tactical",
+        "price": 119.90,
+        "originalPrice": 159.90,
+        "image": "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=600&h=750&fit=crop"
+        ],
+        "category": "Bermudas",
+        "description": "Bermuda cargo com múltiplos bolsos. Tecido resistente e versátil para diversas ocasiões. Ajuste confortável.",
+        "sizes": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "colors": [
+            "Verde",
+            "Preto",
+            "Cinza"
+        ],
+        "stock": 40,
+        "discount": 25,
+        "rating": 4.5,
+        "reviewCount": 78
+    },
+    {
+        "id": 6,
+        "name": "Camiseta Longline Black",
+        "price": 79.90,
+        "image": "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600&h=750&fit=crop"
+        ],
+        "category": "Camisetas",
+        "description": "Camiseta longline com modelagem alongada. Estilo urbano e moderno. 100% algodão.",
+        "sizes": [
+            "P",
+            "M",
+            "G"
+        ],
+        "colors": [
+            "Preto"
+        ],
+        "stock": 50,
+        "rating": 4.4,
+        "reviewCount": 92
+    },
+    {
+        "id": 7,
+        "name": "Tênis Urban Runner",
+        "price": 299.90,
+        "originalPrice": 399.90,
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=750&fit=crop"
+        ],
+        "category": "Calçados",
+        "description": "Tênis urbano com design moderno e confortável. Solado antiderrapante e palmilha anatômica.",
+        "sizes": [
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43"
+        ],
+        "colors": [
+            "Preto",
+            "Branco"
+        ],
+        "stock": 25,
+        "discount": 25,
+        "rating": 4.8,
+        "reviewCount": 145
+    },
+    {
+        "id": 8,
+        "name": "Boné Snapback Limited",
+        "price": 69.90,
+        "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&h=750&fit=crop"
+        ],
+        "category": "Acessórios",
+        "description": "Boné snapback edição limitada. Ajuste regulável e bordado de alta qualidade.",
+        "sizes": [
+            "Único"
+        ],
+        "colors": [
+            "Preto",
+            "Branco"
+        ],
+        "stock": 60,
+        "isNew": true,
+        "rating": 4.6,
+        "reviewCount": 34
+    },
+    {
+        "id": 9,
+        "name": "Regata Tank Top",
+        "price": 59.90,
+        "image": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=750&fit=crop"
+        ],
+        "category": "Camisetas",
+        "description": "Regata básica essencial para o verão. Tecido leve e respirável.",
+        "sizes": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "colors": [
+            "Preto",
+            "Branco",
+            "Cinza"
+        ],
+        "stock": 70,
+        "rating": 4.3,
+        "reviewCount": 67
+    },
+    {
+        "id": 10,
+        "name": "Jaqueta Jeans Destroyed",
+        "price": 279.90,
+        "originalPrice": 349.90,
+        "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=750&fit=crop"
+        ],
+        "category": "Jaquetas",
+        "description": "Jaqueta jeans com efeito destroyed. Estilo vintage e atemporal.",
+        "sizes": [
+            "M",
+            "G",
+            "GG"
+        ],
+        "colors": [
+            "Azul"
+        ],
+        "stock": 18,
+        "discount": 20,
+        "rating": 4.7,
+        "reviewCount": 112
+    },
+    {
+        "id": 11,
+        "name": "Mochila Urban Backpack",
+        "price": 159.90,
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=750&fit=crop"
+        ],
+        "category": "Acessórios",
+        "description": "Mochila urbana com compartimento para notebook. Resistente à água e design moderno.",
+        "sizes": [
+            "Único"
+        ],
+        "colors": [
+            "Preto",
+            "Cinza"
+        ],
+        "stock": 35,
+        "isNew": true,
+        "rating": 4.9,
+        "reviewCount": 88
+    },
+    {
+        "id": 12,
+        "name": "Calça Jeans Skinny",
+        "price": 169.90,
+        "originalPrice": 219.90,
+        "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&h=500&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600&h=750&fit=crop"
+        ],
+        "category": "Calças",
+        "description": "Calça jeans skinny com elastano para maior conforto. Modelagem ajustada ao corpo.",
+        "sizes": [
+            "38",
+            "40",
+            "42",
+            "44"
+        ],
+        "colors": [
+            "Azul",
+            "Preto"
+        ],
+        "stock": 42,
+        "discount": 23,
+        "rating": 4.5,
+        "reviewCount": 156
+    }
+]

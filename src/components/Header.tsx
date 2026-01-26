@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Menu, X, ShoppingCart, Search, User } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useCart } from "@/hooks/useCart";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { getItemCount } = useCart();
 
   const navLinks = [
     { label: "Início", href: "#" },
@@ -46,22 +49,30 @@ const Header = () => {
             <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
               <User className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="relative text-muted-foreground hover:text-foreground">
-              <ShoppingCart className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center">
-                0
-              </span>
-            </Button>
+            <Link to="/carrinho">
+              <Button variant="ghost" size="icon" className="relative text-muted-foreground hover:text-foreground">
+                <ShoppingCart className="h-5 w-5" />
+                {getItemCount() > 0 && (
+                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center">
+                    {getItemCount()}
+                  </span>
+                )}
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center gap-2">
-            <Button variant="ghost" size="icon" className="relative text-muted-foreground">
-              <ShoppingCart className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center">
-                0
-              </span>
-            </Button>
+            <Link to="/carrinho">
+              <Button variant="ghost" size="icon" className="relative text-muted-foreground">
+                <ShoppingCart className="h-5 w-5" />
+                {getItemCount() > 0 && (
+                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center">
+                    {getItemCount()}
+                  </span>
+                )}
+              </Button>
+            </Link>
             <Button
               variant="ghost"
               size="icon"

@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Camisetas",
+        "slug": "camisetas",
+        "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&h=500&fit=crop",
+        "count": 45,
+        "description": "Camisetas básicas, oversized e longline para todos os estilos"
+    },
+    {
+        "id": 2,
+        "name": "Calças",
+        "slug": "calcas",
+        "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+        "count": 32,
+        "description": "Calças jogger, jeans e cargo para looks urbanos"
+    },
+    {
+        "id": 3,
+        "name": "Moletons",
+        "slug": "moletons",
+        "image": "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=400&h=500&fit=crop",
+        "count": 28,
+        "description": "Moletons com e sem capuz para os dias frios"
+    },
+    {
+        "id": 4,
+        "name": "Acessórios",
+        "slug": "acessorios",
+        "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400&h=500&fit=crop",
+        "count": 56,
+        "description": "Bonés, mochilas e acessórios para completar seu look"
+    },
+    {
+        "id": 5,
+        "name": "Jaquetas",
+        "slug": "jaquetas",
+        "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+        "count": 22,
+        "description": "Jaquetas jeans, corta-vento e bomber"
+    },
+    {
+        "id": 6,
+        "name": "Bermudas",
+        "slug": "bermudas",
+        "image": "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=400&h=500&fit=crop",
+        "count": 18,
+        "description": "Bermudas cargo e moletom para o verão"
+    },
+    {
+        "id": 7,
+        "name": "Calçados",
+        "slug": "calcados",
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=500&fit=crop",
+        "count": 15,
+        "description": "Tênis urbanos e sneakers exclusivos"
+    }
+]
