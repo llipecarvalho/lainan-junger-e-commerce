@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import ParticlesBackground from "./ParticlesBackground";
 
 const Hero = () => {
   return (
@@ -7,7 +8,8 @@ const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/30" />
       <div className="absolute inset-0 bg-noise pointer-events-none" />
-      
+      <ParticlesBackground />
+
       {/* Decorative elements */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-2xl" />
@@ -20,20 +22,21 @@ const Hero = () => {
                 🔥 Novidades toda semana
               </span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Vista-se com <span className="highlight">estilo</span> e{" "}
-              <span className="highlight">autenticidade</span>
+              Uma escolha simples. <span className="highlight">Um impacto real.</span> {" "}
+              <span className="highlight"></span>
             </h1>
-            
+
             <p className="text-lg text-muted-foreground max-w-lg">
-              Descubra nossa coleção exclusiva de roupas e acessórios. 
-              Qualidade premium, preços acessíveis e entrega rápida para todo Brasil.
+              Prêmio pra você. Impacto para muitos!
+              <br />
+              Participe, concorra e ajude a fortalecer projetos sociais pelo Instituto Plural.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="btn-primary group">
-                Ver Coleção
+                Ver Campanha
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" className="border-border hover:bg-secondary">
@@ -60,13 +63,13 @@ const Hero = () => {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden animate-float">
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10" />
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=750&fit=crop"
+                src="/lainan1.jpeg"
                 alt="Moda Exclusiva"
                 className="w-full h-full object-cover"
               />
               {/* Floating badge */}
               <div className="absolute bottom-8 left-8 right-8 z-20 bg-card/90 backdrop-blur-sm rounded-xl p-4 border border-border">
-                <p className="text-sm text-muted-foreground">Nova Coleção</p>
+                <p className="text-sm text-muted-foreground">Nova Campanha</p>
                 <p className="text-xl font-bold">Até 40% OFF</p>
               </div>
             </div>

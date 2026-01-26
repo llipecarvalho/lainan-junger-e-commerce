@@ -24,7 +24,7 @@ const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <span className="font-display text-2xl md:text-3xl tracking-wider text-foreground">
-              LAINAN <span className="text-primary">JUNGER</span>
+              Elev<span className="text-primary">-C</span>
             </span>
           </a>
 
