@@ -1,218 +1,101 @@
-# Elev-C - Plataforma de Campanhas Sociais
+# Elev-C - Plataforma de Filantropia Premiável e E-commerce
 
-Plataforma web moderna desenvolvida para o Instituto Plural, permitindo que usuários participem de campanhas, concorram a prêmios e contribuam para projetos sociais.
+Plataforma web moderna desenvolvida para o **Instituto Plural**, unindo e-commerce de moda exclusiva com a modalidade de **Filantropia Premiável**, permitindo que usuários adquiram produtos, participem de sorteios regulamentados e contribuam para projetos sociais.
 
 ---
 
 ## 🎯 Sobre o Projeto
 
-**Elev-C** é uma aplicação web completa que conecta pessoas a causas sociais através de campanhas interativas. O projeto combina tecnologia de ponta com propósito social, oferecendo uma experiência premium aos usuários enquanto gera impacto positivo na sociedade.
+**Elev-C** é uma aplicação híbrida que integra:
+1.  **Loja Virtual Premium**: Moda exclusiva com design sofisticado.
+2.  **Plataforma de Sorteios**: Títulos de capitalização regulamentados pela SUSEP, onde a compra apoia causas sociais e dá direito a concorrer a prêmios em dinheiro.
 
-**Missão:** Prêmio pra você. Impacto para muitos!
+**Missão:** Une estilo, sorte e solidariedade. "Prêmio pra você. Impacto para muitos!"
 
 ---
 
-## ✨ Funcionalidades Implementadas
+## ✨ Funcionalidades Principais
 
-### 🛒 Sistema de Carrinho Completo
-- Adicionar produtos ao carrinho com seleção de tamanho e cor
-- Atualizar quantidades de itens
-- Remover produtos do carrinho
-- Cálculo automático de subtotal, frete e total
-- Frete grátis para compras acima de R$ 199
-- Persistência de dados no localStorage
-- Notificações visuais (toast) para todas as ações
+### 🎟️ Campanhas e Sorteios (Novo)
+- **Grid de Campanhas**: Visualização clara de sorteios em andamento.
+- **Design Premium**: Cards com tipografia impactante, preço em destaque e badges de status.
+- **Transparência**: Exibição clara de datas de sorteio e número da edição.
+- **Últimos Ganhadores**: Seção dedicada para mostrar a transparência e veracidade dos prêmios entregues.
 
-### ❤️ Sistema de Favoritos
-- Adicionar/remover produtos dos favoritos
-- Indicador visual nos cards de produtos
-- Persistência no localStorage
-- Contador de favoritos
+### ⚖️ Legalidade e Transparência (Novo)
+- **Seção Informativa**: Área dedicada à explicação do modelo de negócios (Filantropia Premiável).
+- **Parceiros Oficiais**: Exibição dos órgãos reguladores e parceiros (SUSEP, Kovr Capitalização, Instituto Plural).
+- **Modal Interativo**: Acesso rápido ao regulamento completo via modal acessível, mantendo o design limpo.
+- **Conteúdo Educativo**: Abas interativas alternando entre informações sobre "Legalidade" e "Filantropia".
 
-### 📦 Catálogo de Produtos
-- 12 produtos completos com informações detalhadas
-- 7 categorias organizadas
-- Grid responsivo de produtos
-- Badges de desconto e novidades
-- Imagens de alta qualidade
+### 🛒 E-commerce Completo
+- **Carrinho de Compras**: Adicionar/remover itens, cálculo de frete e total.
+- **Favoritos**: Lista de desejos persistente.
+- **Catálogo de Produtos**: Filtros por categoria, detalhes de produto e variações (tamanho/cor).
 
-### 🔍 Páginas Detalhadas
-- **Home** - Hero section com partículas animadas, produtos em destaque e categorias
-- **Detalhes do Produto** - Galeria de imagens, seleção de variações, avaliações e produtos relacionados
-- **Carrinho** - Visualização completa com resumo do pedido e indicador de frete grátis
-- **404** - Página de erro personalizada
-
-### 🎨 Efeitos Visuais
-- **Partículas animadas** no background do Hero (80 partículas dinâmicas)
-- Animações suaves em hover
-- Transições fluidas entre páginas
-- Design responsivo para todos os dispositivos
-- Tema dark moderno com gradientes
-
-### 🧭 Navegação
-- Roteamento completo com React Router
-- Links funcionais entre todas as páginas
-- Breadcrumbs para navegação contextual
-- Menu mobile responsivo
-- Contador dinâmico no carrinho (header)
+### 🎨 Design e UI/UX
+- **Layout Responsivo**: Alinhamento global padronizado (`max-w-6xl`) para uma experiência visual consistente em desktop e mobile.
+- **Tema Dark Moderno**: Paleta de cores sofisticada (Preto, Cinza e Vermelho Primário).
+- **Partículas**: Background dinâmico com partículas sutis na seção Hero e Biografia.
+- **Animações**: Micro-interações em botões, cards e transições de página.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-### Core
-- **React 18** - Biblioteca UI
-- **TypeScript** - Tipagem estática
-- **Vite** - Build tool e dev server
-- **React Router DOM** - Roteamento
-
-### UI/UX
-- **Tailwind CSS** - Framework CSS utilitário
-- **shadcn/ui** - Componentes UI de alta qualidade
-- **Lucide React** - Ícones modernos
-- **Sonner** - Sistema de notificações toast
-
-### Gerenciamento de Estado
-- **Context API** - Estado global (carrinho, favoritos)
-- **Custom Hooks** - Lógica reutilizável
-- **localStorage** - Persistência de dados
-
-### Animações
-- **CSS Animations** - Partículas e transições
-- **Tailwind Animate** - Animações utilitárias
+- **Framework**: React 18 + Vite
+- **Linguagem**: TypeScript
+- **Estilização**: Tailwind CSS
+- **Componentes**: shadcn/ui + Radix UI
+- **Ícones**: Lucide React
+- **Navegação**: React Router DOM
+- **Gerenciamento de Estado**: React Context API
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto Atualizada
 
 ```
 lainan-junger-e-commerce/
-├── public/                    # Arquivos estáticos
-│   ├── favicon.ico           # Ícone do site
-│   └── lainan1.jpeg          # Imagem do hero
 ├── src/
-│   ├── components/           # Componentes reutilizáveis
-│   │   ├── ui/              # Componentes shadcn/ui
-│   │   ├── Header.tsx       # Cabeçalho com navegação
-│   │   ├── Hero.tsx         # Seção hero com partículas
-│   │   ├── ProductCard.tsx  # Card de produto
-│   │   ├── ProductGrid.tsx  # Grid de produtos
-│   │   ├── Categories.tsx   # Seção de categorias
-│   │   ├── CartItem.tsx     # Item do carrinho
-│   │   ├── CartSummary.tsx  # Resumo do pedido
-│   │   ├── ParticlesBackground.tsx  # Efeito de partículas
-│   │   ├── Newsletter.tsx   # Formulário de newsletter
-│   │   ├── TrustBadges.tsx  # Badges de confiança
-│   │   └── Footer.tsx       # Rodapé
-│   ├── pages/               # Páginas da aplicação
-│   │   ├── Index.tsx        # Página inicial
-│   │   ├── Cart.tsx         # Página do carrinho
-│   │   ├── ProductDetail.tsx # Detalhes do produto
-│   │   └── NotFound.tsx     # Página 404
-│   ├── contexts/            # Context API providers
-│   │   ├── CartContext.tsx  # Gerenciamento do carrinho
-│   │   └── FavoritesContext.tsx # Gerenciamento de favoritos
-│   ├── hooks/               # Custom hooks
-│   │   ├── useCart.ts       # Hook do carrinho
-│   │   ├── useFavorites.ts  # Hook de favoritos
-│   │   └── useProducts.ts   # Hook de produtos (filtros, busca)
-│   ├── types/               # TypeScript types
-│   │   └── types.ts         # Definições de tipos
-│   ├── constants/           # Constantes da aplicação
-│   │   └── constants.ts     # Configurações e valores fixos
-│   ├── data/                # Dados mockados
-│   │   ├── products.json    # 12 produtos completos
-│   │   └── categories.json  # 7 categorias
-│   ├── lib/                 # Utilitários
-│   │   └── utils.ts         # Funções auxiliares
-│   ├── App.tsx              # Componente raiz com rotas
-│   ├── main.tsx             # Entry point
-│   └── index.css            # Estilos globais
-├── index.html               # HTML principal
-├── package.json             # Dependências
-├── tailwind.config.ts       # Configuração Tailwind
-├── tsconfig.json            # Configuração TypeScript
-└── vite.config.ts           # Configuração Vite
+│   ├── components/
+│   │   ├── ui/                 # Componentes base (shadcn/ui)
+│   │   ├── Header.tsx          # Navegação principal
+│   │   ├── Hero.tsx            # Destaque inicial
+│   │   ├── CampaignSection.tsx # Grid de sorteios e ganhadores
+│   │   ├── LegalitySection.tsx # Seção de transparência e regulamento
+│   │   ├── Biography.tsx       # Sobre Lainan Junger
+│   │   ├── ProductCard.tsx     # Componente de produto
+│   │   └── Footer.tsx          # Rodapé com links e selos
+│   ├── pages/
+│   │   ├── Index.tsx           # Home que agrega todas as seções
+│   │   └── ...
+│   ├── data/
+│   │   └── products.json       # Dados mockados
+│   └── ...
 ```
 
 ---
 
 ## 🚀 Como Executar
 
-### Pré-requisitos
-- Node.js 18+ instalado
-- npm ou yarn
+1.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-### Instalação de Dependências
-```bash
-npm install
-```
+2.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
 
-### Servidor de Desenvolvimento
-```bash
-npm run dev
-```
-Acesse: `http://localhost:8080`
-
-### Build para Produção
-```bash
-npm run build
-```
-
-### Preview do Build
-```bash
-npm run preview
-```
+3.  **Acesse:**
+    Abra `http://localhost:8080` (ou a porta indicada no terminal).
 
 ---
 
-## 🎨 Personalização
-
-### Cores e Tema
-Edite `tailwind.config.ts` e `src/index.css` para ajustar:
-- Paleta de cores
-- Fontes
-- Espaçamentos
-- Animações
-
-### Conteúdo
-- **Produtos:** `src/data/products.json`
-- **Categorias:** `src/data/categories.json`
-- **Textos:** Componentes em `src/components/`
-
-### Imagens
-Adicione suas imagens em `public/` e referencie com `/nome-da-imagem.jpg`
-
----
-
-## 📊 Dados do Projeto
-
-### Produtos
-- **Total:** 12 produtos completos
-- **Categorias:** Camisetas, Calças, Moletons, Jaquetas, Bermudas, Calçados, Acessórios
-- **Informações:** Nome, preço, imagens múltiplas, tamanhos, cores, descrição, avaliações
-
-### Categorias
-- **Total:** 7 categorias
-- **Dados:** Nome, imagem, contagem de produtos, descrição
-
----
-
-## 🔒 Licença
+## 🔒 Licença e Direitos
 
 **Todos os direitos reservados © 2026 Elev-C / Instituto Plural**
 
-Este projeto está sob licença proprietária protegida. O código-fonte, design e conteúdo são propriedade exclusiva do Instituto Plural e não podem ser reproduzidos, distribuídos ou utilizados sem autorização expressa.
-
----
-
-## 📞 Contato
-
-Para mais informações sobre o projeto ou parcerias:
-- **Email:** contato@elevc.com.br
-- **Website:** Em breve
-- **Instagram:** @elevc
-
----
-
-**Desenvolvido com 💜 para fazer a diferença**
+Este projeto opera sob rigorosa regulamentação da **SUSEP** em parceria com a **Kovr Capitalização S.A.**. O código-fonte é proprietário.
