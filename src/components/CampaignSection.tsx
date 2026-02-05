@@ -37,7 +37,7 @@ const CampaignSection = () => {
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
                                     {/* Placeholder Image - User can replace src later */}
                                     <img
-                                        src="/lainan1.jpeg"
+                                        src="/estudomobile6.png"
                                         alt={`Campanha Edição #${String(id).padStart(3, '0')}`}
                                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                                     />
