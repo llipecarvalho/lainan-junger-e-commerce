@@ -11,17 +11,15 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
 
   const navLinks = [
-    { label: "Início", href: "#" },
-    { label: "Campanhas", href: "#Campanhas" },
-    { label: "Produtos", href: "#produtos" },
-    { label: "Categorias", href: "#categorias" },
-    { label: "Sobre", href: "#sobre" },
+    { label: "Início", href: "#inicio" },
+    { label: "Campanhas", href: "#campanhas" },
+    { label: "Bio", href: "#bio" },
     { label: "Contato", href: "#contato" },
   ];
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">

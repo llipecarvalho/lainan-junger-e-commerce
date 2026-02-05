@@ -1,9 +1,8 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import TrustBadges from "@/components/TrustBadges";
-import ProductGrid from "@/components/ProductGrid";
-import Categories from "@/components/Categories";
-import Newsletter from "@/components/Newsletter";
+import CampaignSection from "@/components/CampaignSection";
+import LegalitySection from "@/components/LegalitySection";
+import Biography from "@/components/Biography";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -12,10 +11,9 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <TrustBadges />
-        <ProductGrid />
-        <Categories />
-        <Newsletter />
+        <CampaignSection />
+        <LegalitySection />
+        <Biography />
       </main>
       <Footer />
     </div>
