@@ -32,25 +32,37 @@ const CampaignSection = () => {
 
                         return (
                             <div key={id} className="bg-card border border-border rounded-3xl overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300 group flex flex-col">
-                                {/* Content Area */}
-                                <div className="p-6 flex flex-col flex-1 h-full relative">
-                                    <div className="absolute top-4 right-4">
-                                        <Badge className="bg-primary/10 text-primary hover:bg-primary/20 px-1.5 py-0 text-[10px] font-bold uppercase tracking-wide border border-primary/20 shadow-sm">
+                                {/* Campaign Image - Horizontal Slot */}
+                                <div className="relative w-full aspect-video bg-muted overflow-hidden">
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
+                                    {/* Placeholder Image - User can replace src later */}
+                                    <img
+                                        src="/lainan1.jpeg"
+                                        alt={`Campanha Edição #${String(id).padStart(3, '0')}`}
+                                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                    />
+
+                                    {/* Badge moved inside image for better layout */}
+                                    <div className="absolute top-3 right-3 z-20">
+                                        <Badge className="bg-black/50 backdrop-blur-md text-white hover:bg-black/70 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide border border-white/20 shadow-sm">
                                             Em Andamento
                                         </Badge>
                                     </div>
+                                </div>
 
-                                    <div className="mt-2 mb-6">
-                                        <h3 className="text-xl font-bold text-foreground mb-2">Edição #{String(id).padStart(3, '0')}</h3>
-                                        <div className="flex items-center gap-2 text-muted-foreground text-sm">
-                                            <Calendar className="w-4 h-4" />
+                                {/* Content Area */}
+                                <div className="p-5 flex flex-col flex-1 h-full relative">
+                                    <div className="mb-4">
+                                        <h3 className="text-xl font-bold text-foreground mb-1">Edição #{String(id).padStart(3, '0')}</h3>
+                                        <div className="flex items-center gap-2 text-muted-foreground text-xs">
+                                            <Calendar className="w-3.5 h-3.5" />
                                             <span>Sorteio: {dateStr} às 19h</span>
                                         </div>
                                     </div>
 
                                     <div className="mt-auto space-y-4">
                                         <div className="flex flex-col gap-0 border-t border-border pt-4 relative items-center">
-                                            <span className="text-xs text-muted-foreground font-medium uppercase tracking-wide">Por apenas</span>
+                                            <span className="text-[10px] text-muted-foreground font-medium uppercase tracking-wide">Por apenas</span>
                                             <div className="flex items-baseline gap-1">
                                                 <span className="text-sm font-bold text-primary">R$</span>
                                                 <span className="text-4xl font-black text-primary tracking-tight" style={{ textShadow: "0 2px 10px rgba(220, 38, 38, 0.2)" }}>0,22</span>
@@ -58,7 +70,7 @@ const CampaignSection = () => {
                                         </div>
 
                                         {/* Button - Bottom */}
-                                        <Button className="w-full font-bold shadow-md shadow-primary/10 group-hover:shadow-primary/25 bg-primary hover:bg-primary/90 text-primary-foreground transition-all">
+                                        <Button className="w-full font-bold shadow-md shadow-primary/10 group-hover:shadow-primary/25 bg-primary hover:bg-primary/90 text-primary-foreground transition-all h-10 text-sm">
                                             Participar
                                             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                         </Button>
